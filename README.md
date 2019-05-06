@@ -12,6 +12,9 @@ a design document for SparkEd V3
 ### Terminologies
 
 
+### Data Model 
+
+
 ### Non-Goals
 
 
@@ -26,3 +29,9 @@ These will correspond with the indicated [milestones here](https://github.com/Sp
 
 
 ### Scoping and Timeline
+
+
+### Impact 
+
+
+### Risks
