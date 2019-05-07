@@ -12,7 +12,13 @@ SparkEd is a software for organizing and presenting educational and training con
 
 The current implementation of SparkEd is documented [here](https://sparkeduab.github.io/sparked-manual/) and the source code lives [here](https://github.com/SparkEdUAB/SparkEd).
 
- **Implementation** 
+### Goals
+
+As explained in the introduction SparkEd aims to solve the prooblem of content delivery and presentational of educational contents on most platforms and in remote areas.
+
+
+
+### Implementation
  
 SparkEd aims to be a platform that accomodates different institutions, this means that it doesn't matter whether you want to use in a school setup or in any organization that has and offers educational contents.
 We currently have the following structures:
@@ -32,16 +38,103 @@ An ideal implementation for High-School(Secondary)
 
 
 
-
-
-
 ### Terminologies
 
 
 ### Data Model 
 
+SparkEd uses MongoDB for Data storage and the following are the structure of different collections.
+
+**Collections**
+
+school 
+```js
+ {
+   _id: String,
+  name: String,
+  code: String,
+  createdAt: Date,
+  createdBy: String,
+ }
+
+```
+program
+```js
+ {
+  _id: String
+  name: String,
+  code: String,
+  schoolId: String,
+  duration: String,
+  createdAt: Date,
+  createdBy: String,
+ }
+
+```
+course
+```js
+ {
+   _id: String
+  name: String,
+  code: String,
+  details: {
+     schoolId: String,
+     programId: String,
+     language: String,
+  },
+  createdAt: Date,
+  createdBy: String,
+ }
+```
+
+units
+
+```js
+{
+  name: String,
+  topics: Number,
+  unitDesc: String,
+    details: {
+     courseId: String,
+     programId: String,
+     language: String,
+  },
+  createdAt: Date,
+  createdBy: String,
+}
+
+```
+
+topics
+
+```js
+{
+  unitId: String,
+  name: String,
+  unit: String,
+  resources: Array,
+  'resources.$': Object,
+  createdAt: Date,
+  createdBy: String,
+}
+```
+resources
+Resources are basicall file objects that contain information about the files, these are the supported file types
+- Videos(`mp4, webm`)
+- Pdf(`pdf`)
+- Image(`png, jpg, jpeg,`)
+- Audio(`mp3, ogg`)
+- Text(`txt`)
+
+
+
 
 ### Non-Goals
+
+SparkEd is not meant to be a replacement for **Moodle** and this will remain the case, If you want to have a full fledged school management system, you might want consider Moodle or other options. 
+The following are problems SparkEd doesn't solve  
+- Discussion or Forum between Instructors and Learners
+- Institution or Organization management system
 
 
 ### Milestones 
