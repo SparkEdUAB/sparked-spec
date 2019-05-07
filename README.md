@@ -23,12 +23,12 @@ This is designed for organizations whose contents are divided in higher level hi
 
 ![higher-level](https://sparkeduab.github.io/sparked-manual/docs/assets/school10.png)
 
-
+This is a common implementation in most schools and organizations.   
 
 ![course-mid-lvel](https://sparkeduab.github.io/sparked-manual/docs/assets/school11.png)
 
-
-![subjects-low-level](https://sparkeduab.github.io/sparked-manual/docs/assets/school12.png)
+An ideal implementation for High-School(Secondary)   
+![subjects-low-level](https://sparkeduab.github.io/sparked-manual/docs/assets/school12.png)  
 
 
 
