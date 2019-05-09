@@ -37,7 +37,6 @@ An ideal implementation for High-School(Secondary)
 ![subjects-low-level](https://sparkeduab.github.io/sparked-manual/docs/assets/school12.png)  
 
 
-
 ### Terminologies
 
 
@@ -127,8 +126,6 @@ Resources are basicall file objects that contain information about the files, th
 - Text(`txt`)
 
 
-
-
 ### Non-Goals
 
 SparkEd is not meant to be a replacement for **Moodle** and this will remain the case, If you want to have a full fledged school management system, you might want consider Moodle or other options. 
@@ -143,11 +140,20 @@ These will correspond with the indicated [milestones here](https://github.com/Sp
 
 ### Existing Solution
 
+The current solution is implemented and named as SparkEd
 
-### Proposed Solution
+
+### Proposed Solution 
+> We will include new User Interface proposals soon here
+
+
+
+
 
 
 ### Scoping and Timeline
+
+The project scoping will be included here soon as soon issues are broken down into their specifics
 
 
 ### Impact 
