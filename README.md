@@ -2,15 +2,29 @@
 
 a design document for SparkEd V3
 
-### Title 
-
-
-
 ### Introduction
 
 SparkEd is a software for organizing and presenting educational and training contents for delivery on most platforms.  
 
 The current implementation of SparkEd is documented [here](https://sparkeduab.github.io/sparked-manual/) and the source code lives [here](https://github.com/SparkEdUAB/SparkEd).
+
+### Motivation
+
+There are many reasons that made us decide to re-write the SparkEd from scratch, Initially we got feedback from the reviewers at the University of Alabama and there were many issues in version1, we tried to work on most of them but some of the issues were at the core of the code base and this could affect much if we worked on them.  
+
+We decided to keep the codebase we had and maintain as we planned to rewrite everything and fix most of the issues.
+
+some of the issues are the following:
+
+- Security
+- Perfomance
+- Test
+- Responsive design
+
+These were the major problems we had that we couldn't address fully
+
+You can read more about other issues [here](https://docs.google.com/document/d/1yZQWqh9KWtOeGHgNknNGzYQCEZku9Ml2vPPExvn4PvA/edit?usp=sharing)
+
 
 ### Goals
 
