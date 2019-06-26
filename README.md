@@ -1,6 +1,10 @@
 # sparked-spec
 
-a design document for SparkEd V3
+a design document for SparkEd V3  
+
+Graph Representation of how different entities relate to each other.
+![sparked-server](sparked-server.PNG)
+
 
 ### Introduction
 
